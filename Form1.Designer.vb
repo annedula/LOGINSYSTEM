@@ -33,27 +33,29 @@ Partial Class Form1
         ' txtUser
         ' 
         txtUser.Font = New Font("Segoe UI Variable Small", 12F)
-        txtUser.Location = New Point(105, 97)
+        txtUser.Location = New Point(150, 162)
+        txtUser.Margin = New Padding(4, 5, 4, 5)
         txtUser.Name = "txtUser"
-        txtUser.Size = New Size(224, 29)
+        txtUser.Size = New Size(318, 39)
         txtUser.TabIndex = 0
         ' 
         ' txtPass
         ' 
         txtPass.Font = New Font("Segoe UI Variable Small", 12F)
-        txtPass.Location = New Point(105, 142)
+        txtPass.Location = New Point(150, 237)
+        txtPass.Margin = New Padding(4, 5, 4, 5)
         txtPass.Name = "txtPass"
-        txtPass.PasswordChar = "*"c
-        txtPass.Size = New Size(224, 29)
+        txtPass.Size = New Size(318, 39)
         txtPass.TabIndex = 1
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI Variable Display", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(105, 26)
+        Label1.Location = New Point(150, 43)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(145, 28)
+        Label1.Size = New Size(220, 43)
         Label1.TabIndex = 2
         Label1.Text = "Login System"
         ' 
@@ -61,9 +63,10 @@ Partial Class Form1
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Variable Small", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(12, 99)
+        Label2.Location = New Point(17, 165)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(87, 21)
+        Label2.Size = New Size(131, 32)
         Label2.TabIndex = 3
         Label2.Text = "Username:"
         ' 
@@ -71,9 +74,10 @@ Partial Class Form1
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Variable Small", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(12, 142)
+        Label3.Location = New Point(17, 237)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(82, 21)
+        Label3.Size = New Size(125, 32)
         Label3.TabIndex = 4
         Label3.Text = "Password:"
         ' 
@@ -82,25 +86,27 @@ Partial Class Form1
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.RoyalBlue
-        Button1.Location = New Point(163, 188)
+        Button1.Location = New Point(233, 313)
+        Button1.Margin = New Padding(4, 5, 4, 5)
         Button1.Name = "Button1"
-        Button1.Size = New Size(104, 32)
+        Button1.Size = New Size(149, 53)
         Button1.TabIndex = 5
         Button1.Text = "Login"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.MenuBar
-        ClientSize = New Size(362, 261)
+        BackColor = SystemColors.Info
+        ClientSize = New Size(517, 435)
         Controls.Add(Button1)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txtPass)
         Controls.Add(txtUser)
+        Margin = New Padding(4, 5, 4, 5)
         Name = "Form1"
         Text = "Login Form"
         ResumeLayout(False)
